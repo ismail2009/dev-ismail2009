@@ -1,0 +1,257 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>protofilo</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<script type="text/javascript" src="js\jquery-2.2.0.min.js"></script>
+<script  src="bootstrap/js/bootstrap.min.js"></script>
+<style>
+    body {
+  margin-top: 70px;
+  text-align: center;
+  font-family: comfortaa;
+}
+.navbar {
+  height: 70px;
+  background-color: #EEEDED;
+}
+.navbar ul {
+  padding: 10px 70px 0 0;
+  background-color: #EEEDED;
+}
+.navbar-header {
+  padding-top: 10px;
+}
+.navbar-header > a {
+  padding: 23px 0 0 70px;
+  font-family: Josefin sans;
+  font-size: 20px;
+}
+#myNavbar > ul > li > a {
+  font-size: 22px;
+  padding: 19px 15px 9px 15px;
+  font-family: comfortaa;
+}
+#home {
+  background-color: rgba(248, 237, 209, 0.2);
+  min-height: 400px;
+  padding: 130px 25px 130px 25px;
+  box-shadow: 0px 5px 15px white;
+  width: 100%;
+  animation-name: drop-text;
+  animation-duration: 2s;
+}
+@keyframes drop-text {
+  0% {
+    padding: 30px 25px 230px 25px;
+  }
+  100% {
+    padding: 130px 25px 130px 25px;
+  }
+}
+.quote {
+  color: black;
+  font-size: 80px;
+  font-family: amatic sc;
+  text-align: center;
+  position: relative;
+  min-height: 100px;
+  width: 75%;
+  margin: auto;
+  display: block;
+  border-radius: 8px;
+}
+#about {
+  background-color: rgba(168, 219, 168, 0.5);
+  min-height: 200px;
+  width: 100%;
+  padding: 20px 20px 10px 40px;
+  box-shadow: 0px 5px 15px rgba(216, 138, 138, 0.2);
+}
+#about h3 {
+  padding-top: 10px;
+  font-size: 40px;
+  font-family: quicksand;
+  color: black;
+}
+#about a {
+  text-decoration: none;
+  color: black;
+}
+#about p {
+  font-family: quicksand;
+  font-size: 30px;
+  padding-bottom: 7px;
+  margin-top: -17px;
+}
+.fa {
+  font-size: 50px;
+}
+#about > ul > li {
+  padding: 0px 0px 30px 20px;
+}
+.sliding-middle-out {
+  /*creates the underline */
+  display: inline-block;
+  position: relative;
+  padding-bottom: 3px;
+}
+.sliding-middle-out:after {
+  content: '';
+  display: block;
+  margin: auto;
+  height: 3px;
+  width: 0px;
+  background: transparent;
+  transition: width .5s ease, background-color .5s ease;
+}
+.sliding-middle-out:hover:after {
+  width: 100%;
+  background: #3B8686;
+}
+.fa:hover {
+  color: #3B8686;
+}
+#portfolio {
+  background-color: rgba(130, 131, 126, 0.2);
+  padding: 25px 0 0 0;
+  min-height: 500px;
+  width: 100%;
+  box-shadow: 0px 5px 15px lightgrey;
+}
+#portfolio img {
+  padding: 30px 0;
+}
+#portfolio .row {
+  width: 90%;
+  margin: auto;
+}
+#portfolio h2 {
+  font-family: quicksand;
+  font-size: 37px;
+}
+#contact {
+  background-color: #3E3C3C;
+  min-height: 400px;
+  width: 100%;
+  box-shadow: 0px 5px 15px rgba(122, 166, 149, 0.3);
+  padding: 20px 40px 40px 40px;
+  font-family: arial;
+}
+#contact h2, h3 {
+  color: white;
+  font-family: comfortaa;
+}
+#contact h3 {
+  padding-bottom: 30px;
+}
+.container {
+  max-width: 500px;
+}
+textarea {
+  outline: none;
+}
+.btn {
+  font-family: quicksand;
+  text-decoration: bold;
+}
+.btn:hover {
+  background-color: grey;
+  color: white;
+}
+.footer {
+  min-height: 50px;
+  padding: 12px 0 0 0;
+  margin-top: 3px;
+  border-top: 7px solid #3E3C3C;
+  font-family: quicksand;
+}
+</style>
+    </head>
+<body><nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+     <div class="navbar-header">
+       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button> 
+        
+        <a class="navbar-brand" href="#">Ismail AlSaleh</a>
+      </div>   <!-- navbar-header -->
+    
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>  
+       </div>  <!-- navbar-Collapse -->
+  </div>    <!-- container-fluid -->
+</nav>  
+
+  <div id="home">
+      <div class="quote">
+        "I prefer to earn it, it makes me appreciate it more" 
+      </div>    <!-- quote -->
+  </div>     <!-- home -->
+
+  <div id="about">
+    <h3><a href="#" class=sliding-middle-out>Ismail AlSaleh</a></h3><br>
+    <p>Currently Learning to code at 
+      <a href="https://www.freecodecamp.com">FreeCodeCamp.com</a>
+    </p>
+    <ul class="list-unstyled list-inline">
+      <li><a href="https://www.facebook.com/Torres.thayyeb/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+      <li><a href="https://github.com/Thayyebsalim/"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      <li><a href="https://plus.google.com/u/0/110374335461756958707/"><i class="fa fa-google-plus-square" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>     <!-- about -->
+
+  <div id="portfolio">
+    <h2 class="sliding-middle-out">Projects</h2>
+    
+    <div class="row">
+      <div class="col-md-3 col-xs-12">
+        <img class="img-responsive center-block" src="http://www.gemologyproject.com/wiki/images/5/5f/Placeholder.jpg" alt="project 1">
+      </div>       <!-- proj1 -->
+      <div class="col-md-3 col-xs-12">
+        <img class="img-responsive center-block" src="http://www.gemologyproject.com/wiki/images/5/5f/Placeholder.jpg" alt="project 2">
+      </div>       <!-- proj2 -->
+      <div class="col-md-3 col-xs-12">
+        <img class="img-responsive center-block" src="http://www.gemologyproject.com/wiki/images/5/5f/Placeholder.jpg" alt="project 3">
+      </div>       <!-- proj3 -->
+      <div class="col-md-3 col-xs-12">
+        <img class="img-responsive center-block" src="http://www.gemologyproject.com/wiki/images/5/5f/Placeholder.jpg" alt="project 4">
+      </div>       <!-- proj4 -->
+    </div>      <!-- row -->
+  </div>     <!-- portfolio -->
+
+  <div id="contact">
+    <h2>Want to ask me something?</h2>
+      <h3>just leave me a message</h3>
+      <div class="row">
+        <div class="col-lg-12 col-md-12 col-xs-12">
+          <form>
+            <div class="container">
+              <div class="form-group">
+                <input type="email" class="form-control" id="email" placeholder="Enter email">
+              </div>    <!-- form-group -->
+              <div class="form-group">
+                <textarea rows="10" class="form-control" id="message" placeholder="Your Message"></textarea>
+              </div>    <!-- form-group -->
+              <button type="submit" class="btn btn-lg btn-block">Submit</button>
+            </div>   <!-- container -->
+          </form>
+        </div>      <!-- col -->  
+      </div>      <!-- row -->
+  </div>     <!-- contact -->
+ 
+  <div class="footer">
+    Coded by <i class="glyphicon glyphicon-heart-empty"></i> Ismail ALSaleh
+  </div>     <!-- footer -->
+      </body>
+</html>
