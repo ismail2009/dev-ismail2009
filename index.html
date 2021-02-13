@@ -77,13 +77,32 @@
             ><i class="fa fa-linkedin"></i
           ></a>
         </li>
+        <li>
+          <a
+                  href="https://bitbucket.org/ismail2009/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+          ><i class="fa fa-bitbucket" aria-hidden="true"></i>
+          </a>
+        </li>        <li>
+          <a
+                  href="https://gitlab.com/ismail2009"
+                  target="_blank"
+                  rel="noopener noreferrer"
+          ><i class="fa fa-gitlab" aria-hidden="true"></i>
+          </a>
+        </li>
       </ul>
     </div>
     <!-- about -->
 
-    <div id="portfolio">
-      <h2 class="sliding-middle-out">Projects</h2>
+    <div id="portfolio" >
+      <div class="container-fluid">
 
+      <h2 class="sliding-middle-out" style="color: rgba(132, 144, 255, 0.72)">Projects</h2>
+      <div class="row">
+      <h3 class="text-left col-xs-12" style="color: #000000">Websites</h3>
+      </div>
       <div class="row">
         <div class="col-md-3 col-xs-12">
           <a href="https://geolocationdataanalysis-app.herokuapp.com/">
@@ -123,8 +142,36 @@
             />
           </a>
         </div>
+
       </div>
+        <div class="row">
+
+        <h3 class="col-xs-12 text-left" style="color: #000000">Android And IOS Apps </h3>
+        </div>
+      <div class="row">
+
+        <div class="col-md-3 col-xs-12">
+          <a href="https://play.google.com/store/apps/details?id=com.plutoo.plutoo">
+            <img
+                    class="img-responsive center-block"
+                    src="img/plutoo.png"
+                    alt="project 5"
+            />
+          </a>
+        </div>
+        <div class="col-md-3 col-xs-12">
+          <a href="https://play.google.com/store/apps/details?id=com.seetah">
+            <img
+                    class="img-responsive center-block"
+                    src="img/Seetah.png"
+                    alt="project 5"
+            />
+          </a>
+        </div>
+      </div>
+
       <!-- row -->
+      </div>
     </div>
     <!-- portfolio -->
 
@@ -133,12 +180,14 @@
       <h3>just leave me a message</h3>
       <div class="row">
         <div class="col-lg-12 col-md-12 col-xs-12">
-          <form>
+          <form action="https://mailthis.to/ismail2009"
+                method="POST" encType="multipart/form-data">
             <div class="container">
               <div class="form-group">
                 <input
                   type="email"
                   class="form-control"
+                  name="_replyto"
                   id="email"
                   placeholder="Enter email"
                 />
@@ -149,6 +198,7 @@
                   rows="10"
                   class="form-control"
                   id="message"
+                  name="message"
                   placeholder="Your Message"
                 ></textarea>
               </div>
